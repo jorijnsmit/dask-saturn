@@ -1,4 +1,5 @@
 {% set name = "dask-saturn" %}
+{% set version = "0.0.1" %}
 
 package:
   name: "{{ name|lower }}"
