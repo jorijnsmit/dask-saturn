@@ -1,9 +1,8 @@
 {% set name = "dask-saturn" %}
-{% set version = "0.0.1" %}
 
 package:
   name: "{{ name|lower }}"
-  version: "{{ version }}"
+  version: {{os.environ.get('VERSION')}}
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
